@@ -52,7 +52,6 @@ $(document).ready(function () {
     // }
     //  taiKhoan.blur(checkDangNhap);
 
-    $(document).ready(function() {
         var taiKhoan = $("#tai_khoan");
         var tbTaiKhoan = $("#tb_tai_khoan");
         var icon_check_yes = $("#icon_check_yes");
@@ -70,7 +69,7 @@ $(document).ready(function () {
             var inputSDT = /^0[2-9]{1}\d{8}$/;
     
             if (taiKhoan.val() == "") {
-                tbTaiKhoan.html("Vui lòng nhập dữ liệu vào");
+                tbTaiKhoan.html("Nhập Tên Đăng Nhập");
                 icon_check_yes.css("display", "none");
                 icon_check_no.css("display", "block");
                 icon_check_no.css("color", "red");
@@ -90,7 +89,6 @@ $(document).ready(function () {
             tbTaiKhoan.html(" ");
             return true;
         }
-    });
     
 
     //kiem tra mat khau

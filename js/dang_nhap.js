@@ -102,7 +102,7 @@ $(document).ready(function(){
         if (storedPassword == matKhau1) {
             alert('Đăng nhập thành công!');
             // Chuyển hướng đến trang chính sau khi đăng nhập thành công
-            window.location.href = 'home.html';
+            window.location.href = 'index.html';
         } else {
             alert('Tên đăng nhập hoặc mật khẩu không đúng!');
         }
