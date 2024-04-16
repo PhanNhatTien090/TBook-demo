@@ -1,57 +1,4 @@
-$(document).ready(function () {
-    // $("#tai_khoan, #mat_khau, #nhap_lai_mat_khau").val("");
-
-    // function checkEmpty(){
-    //     var txtTaiKhoan = $("#tai_khoan").val();
-    //     var txtMatKhau = $("#mat_khau").val();
-    //     var txtCheckMK = $("#nhap_lai_mat_khau").val();
-    //     var txtHoTen = $("#hoTen").val();
-    //     var txtngaySinh = $("#ngaySinh").val();
-    //     var txtDiaChi = $("#diaChi").val();
-    //     var gioiTinh = $('[name="gt"]:radio:checked').val();
-    //     return txtTaiKhoan !== "" && txtMatKhau !== "" && txtCheckMK !== ""
-    //             && txtHoTen != "" ;
-    // }
-
-
-
-    //kiem tra ten dang nhap
-    // var taiKhoan = $("#tai_khoan");
-    // var tbTaiKhoan = $("#tb_tai_khoan");
-
-    // var icon_check_yes = $("#icon_check_yes");
-    // var icon_check_no = $("#icon_check_no");
-
-    // icon_check_yes.css("display", "none");
-    // icon_check_no.css("display", "none");
-    
-    // function checkDangNhap() {
-    //     var inputEmail = /^[a-z]{1}\w{1,}@gmail\.com$/;
-    //     var inputSDT = /^0[2-9]{1}\d{8}$/;
-
-    //     if (taiKhoan.val() == "") {
-    //         tbTaiKhoan.html("Vui lòng nhập dữ liệu vào");
-    //         icon_check_yes.css("display", "none");
-    //         icon_check_no.css("display", "block");
-    //         icon_check_no.css("color", "red");
-    //         return false;
-    //     }
-
-    //     if (!inputEmail.test(taiKhoan.val()) && !inputSDT.test(taiKhoan.val())) {
-    //         tbTaiKhoan.html("Vui lòng nhập email hoặc số điện thoại");
-    //         icon_check_yes.css("display", "none");
-    //         icon_check_no.css("display", "block");
-    //         icon_check_no.css("color", "red");
-    //         return false;
-    //     }
-    //     icon_check_no.css("display", "none");
-    //     icon_check_yes.css("display", "block");
-    //     icon_check_yes.css("color", "green");
-    //     tbTaiKhoan.html(" ");
-    //     return true;
-    // }
-    //  taiKhoan.blur(checkDangNhap);
-
+$(document).ready(function () { 
         var taiKhoan = $("#tai_khoan");
         var tbTaiKhoan = $("#tb_tai_khoan");
         var icon_check_yes = $("#icon_check_yes");
@@ -60,7 +7,7 @@ $(document).ready(function () {
         icon_check_yes.css("display", "none");
         icon_check_no.css("display", "none");
     
-        taiKhoan.blur(function() {
+        taiKhoan.click(function() {
             checkDangNhap();
         });
     
@@ -272,10 +219,9 @@ $(document).ready(function () {
             $("#submit_dang_ky").css("color", "black");
         }
         else {
-            $("#submit_dang_ky").css("background-color", "");
+            $("#submit_dang_ky").css("background-color", "blue");
         }
     }
-    cssBackGround();
 
     $("#tai_khoan, #mat_khau, #nhap_lai_mat_khau, #hoTen, #ngaySinh, #diaChi, [name='gt']").on("input change", function () {
         cssBackGround();
